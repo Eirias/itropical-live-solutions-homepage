@@ -1,0 +1,267 @@
+/* === Base styles === */
+body {
+  font-family: system-ui, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0b1220;
+  color: #eaeef7;
+}
+
+/* Layout container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* === Header === */
+.header {
+  background: #111;
+  border-bottom: 1px solid #333;
+  position: sticky; /* keep visible on scroll */
+  top: 0;
+  z-index: 10;
+}
+
+/* Header row: logo on left, right-block on right — bottom aligned */
+.header .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;   /* bottom align logo + right block */
+  gap: 24px;
+  flex-wrap: nowrap;
+}
+
+/* Brand (logo wrapper with badge) */
+.header .brand {
+  display: flex;
+  gap: 12px;
+  text-decoration: none;
+  color: #fff;
+  align-items: flex-end;   /* align text baseline with logo bottom */
+}
+
+/* Logo image */
+.header img {
+  width: 250px;
+  height: auto;
+}
+
+/* === Right block: company name (top inside) + nav (below) === */
+.right-block {
+  margin-left: auto;           /* push block to the far right */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;       /* right-align contents */
+  justify-content: flex-start; /* title at top inside the block */
+  gap: 12px;
+}
+
+/* Company title */
+.right-block h1 {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 1.6rem;
+}
+
+/* Nav inside right block */
+.right-block .nav {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Nav links always underlined */
+.header .nav a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: #fff;
+}
+.header .nav a:hover {
+  opacity: 0.85;
+}
+
+/* Language switcher */
+.lang {
+  display: flex;
+  gap: 6px;
+}
+.lang button {
+  background: #273149;
+  border: 1px solid #273149;
+  color: #eaeef7;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.lang button.active {
+  background: #ffd166;
+  color: #111;
+}
+
+/* === Sections & content === */
+.section {
+  padding: 30px 0;
+  border-top: 1px solid #273149;
+}
+.hero {
+  padding: 40px 0;
+}
+.lead {
+  color: #c7d0e4;
+}
+.badge {
+  background: #273149;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: .8rem;
+}
+
+/* Buttons */
+.button {
+  padding: 10px 14px;
+  margin-right: 6px;
+  background: #273149;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+.button.primary {
+  background: #ffd166;
+  color: #111;
+}
+
+.cta {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+/* Cards grid (services, etc.) */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.card {
+  padding: 18px;
+  border: 1px solid #273149;
+  border-radius: 10px;
+  background: #0e1729;
+}
+
+/* Address block */
+.address {
+  white-space: pre-line;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  font-size: .9rem;
+  color: #aaa;
+  text-align: center;
+  border-top: 1px solid #273149;
+}
+
+/* Center the Contact button inside footer */
+.footer-cta {
+  display: flex;              /* enable flexbox */
+  justify-content: center;    /* center horizontally */
+  margin-top: 10px;           /* spacing above */
+}
+
+.footer-cta .button {
+  display: inline-block;      /* keep button size natural */
+}
+
+/* Global links */
+a {
+  color: #ffd166;
+}
+a:hover {
+  opacity: .85;
+}
+
+/* Contact one-liner links */
+.contact-line a {
+  color: #ffd166;
+  text-decoration: none;
+  margin: 0 4px;
+}
+.contact-line a:hover {
+  text-decoration: underline;
+}
+
+/* === Logo wrapper & badge overlay === */
+.logo-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.logo-wrapper .badge {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: rgba(39, 49, 73, 0.9);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+/* === Responsive (mobile) === */
+@media (max-width: 640px) {
+  /* Add horizontal padding */
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Hide company name in header */
+  .header .brand h1,
+  .header h1 {
+    display: none !important;
+  }
+
+  /* Nav: full width, stacked vertically, right-aligned */
+  .header .nav {
+    flex: 1 1 100%;
+    order: 1;                     
+    display: flex;
+    flex-direction: column;       /* stack vertically */
+    align-items: flex-end;        /* right aligned */
+    gap: 26px;
+    justify-content: flex-start;
+  }
+
+  /* Language selector: own row, right aligned */
+  .header .lang {
+    flex: 1 1 100%;
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 6px;
+  }
+
+  /* Smaller language buttons */
+  .header .lang button {
+    padding: 4px 8px;
+  }
+
+  /* Logo smaller on mobile (50% of screen width) */
+  .header img {
+    width: 50vw;
+    height: auto;
+  }
+
+  /* Extra tap area for email links */
+  .footer a,
+  .contact-line a,
+  a[href^="mailto:"] {
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+}
