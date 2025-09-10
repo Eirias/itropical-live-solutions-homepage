@@ -1,30 +1,35 @@
-// sw.js — simple cache-first for shared header & assets
+// sw.js — cache-first strategy for shared assets
 const CACHE = 'site-cache-v1';
 const PRECACHE = [
-  '/header.html',
-  '/styles.css',
-  '/i18n.js',
-  '/lang.js',
-  '/header.js',
-  '/logo.png'
+  'header.html',
+  'styles.css',
+  'i18n.js',
+  'lang.js',
+  'header.js',
+  'logo.png'
 ];
 
+// On install: pre-cache important files
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE).then((c) => c.addAll(PRECACHE))
   );
 });
 
+// On activate: take control immediately
 self.addEventListener('activate', (event) => {
   event.waitUntil(self.clients.claim());
 });
 
-// Cache-first: return cached immediately, update in background
+// On fetch: cache-first strategy
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   if (request.method !== 'GET') return;
 
-  if (PRECACHE.some(path => request.url.includes(path))) {
+  const url = new URL(request.url);
+  const isCacheable = PRECACHE.some(path => url.pathname.endsWith('/' + path));
+
+  if (isCacheable) {
     event.respondWith(
       caches.match(request).then((cached) => {
         const networkFetch = fetch(request).then((resp) => {
