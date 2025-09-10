@@ -1,0 +1,11 @@
+$ORIGIN itropical-live-solutions.com.
+$TTL 3600
+
+; --- GitHub Pages A-Records for root domain ---
+@   IN A     185.199.108.153
+@   IN A     185.199.109.153
+@   IN A     185.199.110.153
+@   IN A     185.199.111.153
+
+; --- GitHub Pages CNAME for www subdomain ---
+www IN CNAME itropical-live-solutions.com.
