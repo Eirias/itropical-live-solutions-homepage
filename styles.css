@@ -78,6 +78,15 @@ body {
   text-underline-offset: 3px;
   color: #fff;
 }
+
+/* === Navigation active link === */
+.header .nav a.active {
+  color: #ffd166;               /* highlight color */
+  font-weight: bold;            /* optional emphasis */
+  text-decoration: underline;   /* underline highlight */
+  text-underline-offset: 4px;
+}
+
 .header .nav a:hover {
   opacity: 0.85;
 }

@@ -14,6 +14,15 @@
       mount.innerHTML = html;
       // Re-run language init if available
       if (window.initLang) window.initLang();
+
+      // 🔹 Highlight active nav link
+      const currentPath = window.location.pathname.split("/").pop() || "index.html";
+      document.querySelectorAll(".header .nav a").forEach(link => {
+        const href = link.getAttribute("href");
+        if (href && (href.endsWith(currentPath) || (currentPath === "index.html" && href.includes("index.html")))) {
+          link.classList.add("active");
+        }
+      });
     })
     .catch(err => console.error('Header load failed:', err));
 })();
