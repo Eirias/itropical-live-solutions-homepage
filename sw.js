@@ -1,12 +1,17 @@
 // sw.js — cache-first strategy for shared assets
-const CACHE = 'site-cache-v1';
+const CACHE = 'site-cache-v2';
 const PRECACHE = [
   'header.html',
   'styles.css',
   'i18n.js',
   'lang.js',
   'header.js',
-  'logo.png'
+  'sw-register.js',
+  'logo.png',
+  'index.html',
+  'contact.html',
+  'privacy.html',
+  'imprint.html'
 ];
 
 // On install: pre-cache important files
@@ -16,9 +21,15 @@ self.addEventListener('install', (event) => {
   );
 });
 
-// On activate: take control immediately
+// On activate: take control immediately and clean old caches
 self.addEventListener('activate', (event) => {
-  event.waitUntil(self.clients.claim());
+  event.waitUntil(
+    caches.keys().then((keys) => {
+      return Promise.all(
+        keys.filter((k) => k !== CACHE).map((k) => caches.delete(k))
+      );
+    }).then(() => self.clients.claim())
+  );
 });
 
 // On fetch: cache-first strategy

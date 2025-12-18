@@ -4,8 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PT. ITROPICAL LIVE SOLUTIONS</title>
+  <!-- Preload critical assets -->
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="preload" href="logo.png" as="image">
+  <link rel="preload" href="header.html" as="fetch" crossorigin>
+  <!-- Favicon and styles -->
   <link rel="icon" href="logo.png">
   <link rel="stylesheet" href="styles.css">
+  <!-- Meta for performance -->
+  <meta name="description" content="PT. ITROPICAL LIVE SOLUTIONS - Swift Full-Stack Development: iOS Apps with SwiftUI and Vapor Backends">
+  <link rel="canonical" href="https://itropical-live-solutions.com/">
 </head>
 <body>
   <div id="site-header"></div>
@@ -41,9 +49,9 @@
   </div>
 </footer>
 
+  <script src="i18n.js" defer></script>
+  <script src="header.js" defer></script>
+  <script src="lang.js" defer></script>
   <script src="sw-register.js" defer></script>
-  <script src="i18n.js"></script>
-  <script src="header.js"></script>
-  <script src="lang.js"></script>
 </body>
 </html>
