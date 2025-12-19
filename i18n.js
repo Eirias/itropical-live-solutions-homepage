@@ -27,6 +27,7 @@ window.I18N = {
     "contact.text": "Get in touch with us quickly via email or phone:",
     "contact.emailBtn": "📧 Email",
     "contact.callBtn": "📞 Call",
+    "contact.address": "ALAMANDA OFFICE, JL. BYPASS NGURAH RAI BR. KE KEDONGANAN<br>Kuta, Badung, Bali 80361<br>Indonesia",
 
     "privacy.title": "Privacy Policy",
   	"privacy.intro": "We take your privacy seriously. This page explains what data we (do not) collect and how we handle information.",
@@ -73,6 +74,7 @@ window.I18N = {
     "contact.text": "Nimm schnell Kontakt mit uns auf – per E-Mail oder Telefon:",
     "contact.emailBtn": "📧 E-Mail",
     "contact.callBtn": "📞 Anrufen",
+    "contact.address": "ALAMANDA OFFICE, JL. BYPASS NGURAH RAI BR. KE KEDONGANAN<br>Kuta, Badung, Bali 80361<br>Indonesien",
 
     "privacy.title": "Datenschutzerklärung",
   	"privacy.intro": "Wir nehmen den Schutz deiner Daten ernst. Diese Seite erklärt, welche Daten wir (nicht) erheben und wie wir Informationen behandeln.",
