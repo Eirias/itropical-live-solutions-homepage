@@ -27,7 +27,7 @@ window.I18N = {
     "contact.text": "Get in touch with us quickly via email or phone:",
     "contact.emailBtn": "📧 Email",
     "contact.callBtn": "📞 Call",
-    "contact.address": "ALAMANDA OFFICE, JL. BYPASS NGURAH RAI BR. KE KEDONGANAN<br>Kuta, Badung, Bali 80361<br>Indonesia",
+    "contact.address": "Alamanda Office, Jl. Bypass Ngurah Rai Br. Kerthayasa No.67, Floor,<br>Kedonganan, Kuta, Kab. Badung, Bali 80361<br>Indonesia",
 
     "privacy.title": "Privacy Policy",
   	"privacy.intro": "We take your privacy seriously. This page explains what data we (do not) collect and how we handle information.",
@@ -37,13 +37,12 @@ window.I18N = {
   	"privacy.contact.body": "If you contact us via email or phone, we will use your data solely to respond to your request. We do not share this information with third parties unless required by law.",
 
     "imprint.title": "Imprint",
-    "imprint.legal": "Legal Entity",
     "imprint.phone": "Phone",
     "imprint.email": "Email",
     "imprint.contactBtn": "📨 Contact Page",
     "imprint.note": "Note: Indonesian law applies. This imprint is provided for informational purposes for international visitors.",
 
-    "footer.copy": "© 2025 PT. ITROPICAL LIVE SOLUTIONS. All rights reserved."
+    "footer.copy": "© 2026 PT. ITROPICAL LIVE SOLUTIONS. All rights reserved."
   },
 
   "de": {
@@ -74,7 +73,7 @@ window.I18N = {
     "contact.text": "Nimm schnell Kontakt mit uns auf – per E-Mail oder Telefon:",
     "contact.emailBtn": "📧 E-Mail",
     "contact.callBtn": "📞 Anrufen",
-    "contact.address": "ALAMANDA OFFICE, JL. BYPASS NGURAH RAI BR. KE KEDONGANAN<br>Kuta, Badung, Bali 80361<br>Indonesien",
+    "contact.address": "Alamanda Office, Jl. Bypass Ngurah Rai Br. Kerthayasa No.67, Floor,<br>Kedonganan, Kuta, Kab. Badung, Bali 80361<br>Indonesien",
 
     "privacy.title": "Datenschutzerklärung",
   	"privacy.intro": "Wir nehmen den Schutz deiner Daten ernst. Diese Seite erklärt, welche Daten wir (nicht) erheben und wie wir Informationen behandeln.",
@@ -84,12 +83,11 @@ window.I18N = {
   	"privacy.contact.body": "Wenn du uns per E-Mail oder Telefon kontaktierst, verwenden wir deine Daten ausschließlich zur Bearbeitung deiner Anfrage. Eine Weitergabe an Dritte erfolgt nicht, es sei denn, wir sind gesetzlich dazu verpflichtet.",
 
     "imprint.title": "Impressum",
-    "imprint.legal": "Rechtlicher Firmenname",
     "imprint.phone": "Telefon",
     "imprint.email": "E-Mail",
     "imprint.contactBtn": "📨 Zur Kontaktseite",
     "imprint.note": "Hinweis: Indonesisches Recht. Dieses Impressum dient Informationszwecken für deutschsprachige Besucher.",
 
-    "footer.copy": "© 2025 PT. ITROPICAL LIVE SOLUTIONS. Alle Rechte vorbehalten."
+    "footer.copy": "© 2026 PT. ITROPICAL LIVE SOLUTIONS. Alle Rechte vorbehalten."
   }
 };

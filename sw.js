@@ -1,5 +1,5 @@
 // sw.js — cache-first strategy for shared assets
-const CACHE = 'site-cache-v2';
+const CACHE = 'site-cache-v3';
 const PRECACHE = [
   'header.html',
   'styles.css',
@@ -7,6 +7,7 @@ const PRECACHE = [
   'lang.js',
   'header.js',
   'sw-register.js',
+  'logo.webp',
   'logo.png',
   'index.html',
   'contact.html',
