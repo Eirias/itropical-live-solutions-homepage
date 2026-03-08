@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio · PT. ITROPICAL LIVE SOLUTIONS</title>
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="preload" href="logo.webp" as="image" type="image/webp">
+  <link rel="preload" href="header.html" as="fetch" crossorigin>
+  <link rel="icon" href="logo.webp" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Apps built by PT. ITROPICAL LIVE SOLUTIONS - iOS applications powered by Swift, SwiftUI and Vapor.">
+  <link rel="canonical" href="https://itropical-live-solutions.com/portfolio.html">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <section class="hero">
+      <h2 data-i18n="portfolio.title">Our Apps</h2>
+      <p class="lead" data-i18n="portfolio.lead">iOS applications designed, developed and operated by our team.</p>
+    </section>
+
+    <section class="section">
+      <div class="cards">
+        <!-- DiceTales -->
+        <a href="dicetales.html" class="card app-card">
+          <div class="app-card-header">
+            <img src="dicetales/icon.png" alt="DiceTales" class="app-card-icon" width="64" height="64" loading="lazy">
+            <div>
+              <h3>DiceTales</h3>
+              <span class="badge" data-i18n="portfolio.dt.tag">iOS App</span>
+            </div>
+          </div>
+          <p data-i18n="portfolio.dt.desc">AI-powered fantasy stories from dice rolls — with themed dice packs, voice narration and a personal story library.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div data-i18n="footer.copy">&copy; 2026 PT. ITROPICAL LIVE SOLUTIONS. All rights reserved.</div>
+    <div class="cta footer-cta">
+      <a class="button primary" href="/contact.html" data-i18n="imprint.contactBtn">Contact Page</a>
+    </div>
+  </footer>
+
+  <script src="i18n.js" defer></script>
+  <script src="header.js" defer></script>
+  <script src="lang.js" defer></script>
+  <script src="sw-register.js" defer></script>
+</body>
+</html>

@@ -7,6 +7,10 @@
       var key = el.getAttribute('data-i18n');
       if (dict[key]) el.innerHTML = dict[key];
     });
+    document.querySelectorAll('[data-i18n-src]').forEach(function(el){
+      var src = el.getAttribute('data-i18n-src');
+      if (dict[src]) el.src = dict[src];
+    });
     var en = document.getElementById('lang-en');
     var de = document.getElementById('lang-de');
     if(en&&de){ en.classList.toggle('active', lang==='en'); de.classList.toggle('active', lang==='de'); }

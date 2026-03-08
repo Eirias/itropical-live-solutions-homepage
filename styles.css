@@ -221,6 +221,54 @@ a:hover {
   color: #fff;
 }
 
+/* === App landing page === */
+.app-hero-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.app-icon {
+  border-radius: 22px;
+  flex-shrink: 0;
+}
+
+/* Screenshot gallery */
+.screenshot-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+.screenshot {
+  height: 480px;
+  width: auto;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+/* === Portfolio page === */
+.app-card {
+  text-decoration: none;
+  color: #eaeef7;
+  transition: border-color .2s;
+}
+.app-card:hover {
+  border-color: #ffd166;
+}
+.app-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+.app-card-icon {
+  border-radius: 14px;
+  flex-shrink: 0;
+}
+.app-card h3 {
+  margin: 0;
+}
+
 /* === Responsive (mobile) === */
 @media (max-width: 640px) {
   /* Add horizontal padding */
@@ -264,6 +312,18 @@ a:hover {
   .header img {
     width: 50vw;
     height: auto;
+  }
+
+  /* App hero stacked on mobile */
+  .app-hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Smaller screenshots on mobile */
+  .screenshot {
+    height: 360px;
   }
 
   /* Extra tap area for email links */
