@@ -15,7 +15,7 @@ const PRECACHE = [
   'imprint.html',
   'portfolio.html',
   'dicetales.html',
-  'dicetales/icon.png'
+  'dicetales/icon.webp'
 ];
 
 // On install: pre-cache important files
