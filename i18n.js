@@ -6,7 +6,8 @@ window.I18N = {
     "nav.contact": "Contact",
 
     "hero.badge": "Bali · Indonesia",
-    "hero.title": "Swift Full-Stack: iOS Apps & Vapor Backends.",
+    "hero.title": "Ship your iOS app faster — one team, one language, end to end.",
+    "hero.cta": "Start a Project",
     "hero.lead": "We build native <strong>iOS apps with SwiftUI</strong> and scalable <strong>Swift/Vapor backends</strong> — one stack, one team, fast feedback loops. From MVP to production, incl. Auth, Push (APNs), realtime & payments.",
     "intro.merged": "PT. ITROPICAL LIVE SOLUTIONS focuses on Swift development. We deliver end-to-end solutions — app architecture, API design, and cloud operations.",
 
@@ -25,8 +26,8 @@ window.I18N = {
     "contact.card.title": "Contact",
     "contact.card.body": "Send us a note and we’ll get back quickly.",
     "contact.text": "Get in touch with us quickly via email or phone:",
-    "contact.emailBtn": "📧 Email",
-    "contact.callBtn": "📞 Call",
+    "contact.emailBtn": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"display:inline-block;vertical-align:middle;margin-right:6px\"><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"/></svg>Email",
+    "contact.callBtn": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"display:inline-block;vertical-align:middle;margin-right:6px\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z\"/></svg>Call",
     "contact.address": "Alamanda Office, Jl. Bypass Ngurah Rai Br. Kerthayasa No.67, Floor,<br>Kedonganan, Kuta, Kab. Badung, Bali 80361<br>Indonesia",
 
     "privacy.title": "Privacy Policy",
@@ -39,7 +40,7 @@ window.I18N = {
     "imprint.title": "Imprint",
     "imprint.phone": "Phone",
     "imprint.email": "Email",
-    "imprint.contactBtn": "📨 Contact Page",
+    "imprint.contactBtn": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"display:inline-block;vertical-align:middle;margin-right:6px\"><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"/></svg>Contact Page",
     "imprint.note": "Note: Indonesian law applies. This imprint is provided for informational purposes for international visitors.",
 
     "nav.portfolio": "Apps",
@@ -141,7 +142,8 @@ window.I18N = {
     "nav.contact": "Kontakt",
 
     "hero.badge": "Bali · Indonesien",
-    "hero.title": "Swift Full-Stack: iOS Apps & Vapor-Backends.",
+    "hero.title": "Ihre iOS-App schneller ausliefern — ein Team, eine Sprache, von Anfang bis Ende.",
+    "hero.cta": "Projekt starten",
     "hero.lead": "Wir bauen native <strong>iOS-Apps mit SwiftUI</strong> und skalierbare <strong>Swift/Vapor-Backends</strong> – ein Stack, ein Team, kurze Wege. Von MVP bis Produktion inkl. Auth, Push (APNs), Realtime & Payments.",
     "intro.merged": "PT. ITROPICAL LIVE SOLUTIONS ist auf Swift-Entwicklung spezialisiert. Wir liefern End-to-End-Lösungen – App-Architektur, API-Design und Cloud-Betrieb.",
 
@@ -160,8 +162,8 @@ window.I18N = {
     "contact.card.title": "Kontakt",
     "contact.card.body": "Schreib uns – wir melden uns schnell.",
     "contact.text": "Nimm schnell Kontakt mit uns auf – per E-Mail oder Telefon:",
-    "contact.emailBtn": "📧 E-Mail",
-    "contact.callBtn": "📞 Anrufen",
+    "contact.emailBtn": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"display:inline-block;vertical-align:middle;margin-right:6px\"><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"/></svg>E-Mail",
+    "contact.callBtn": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"display:inline-block;vertical-align:middle;margin-right:6px\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z\"/></svg>Anrufen",
     "contact.address": "Alamanda Office, Jl. Bypass Ngurah Rai Br. Kerthayasa No.67, Floor,<br>Kedonganan, Kuta, Kab. Badung, Bali 80361<br>Indonesien",
 
     "privacy.title": "Datenschutzerklärung",
@@ -174,7 +176,7 @@ window.I18N = {
     "imprint.title": "Impressum",
     "imprint.phone": "Telefon",
     "imprint.email": "E-Mail",
-    "imprint.contactBtn": "📨 Zur Kontaktseite",
+    "imprint.contactBtn": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"display:inline-block;vertical-align:middle;margin-right:6px\"><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"/></svg>Zur Kontaktseite",
     "imprint.note": "Hinweis: Indonesisches Recht. Dieses Impressum dient Informationszwecken für deutschsprachige Besucher.",
 
     "nav.portfolio": "Apps",

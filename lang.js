@@ -18,6 +18,7 @@
   window.setLang = function(lang){
     localStorage.setItem('lang', lang);
     applyI18N(lang);
+    if (typeof umami !== 'undefined') umami.track('language-switch', { lang: lang });
   };
   window.initLang = function(){
     var params = new URLSearchParams(location.search);

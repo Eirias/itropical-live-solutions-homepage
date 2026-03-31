@@ -136,6 +136,9 @@ body {
   border-radius: 8px;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
+  min-height: 44px;
+  transition: opacity .2s ease, border-color .2s ease;
 }
 .button.primary {
   background: #ffd166;
@@ -145,7 +148,7 @@ body {
 .cta {
   display: flex;
   gap: 12px;
-  margin-top: 12px;
+  margin-top: 24px;
   flex-wrap: wrap;
 }
 
@@ -160,6 +163,7 @@ body {
   border: 1px solid #273149;
   border-radius: 10px;
   background: #0e1729;
+  cursor: pointer;
 }
 
 /* Address block */
@@ -250,10 +254,13 @@ a:hover {
 .app-card {
   text-decoration: none;
   color: #eaeef7;
-  transition: border-color .2s;
+  cursor: pointer;
+  transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease;
 }
 .app-card:hover {
   border-color: #ffd166;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(255, 209, 102, 0.1);
 }
 .app-card-header {
   display: flex;
