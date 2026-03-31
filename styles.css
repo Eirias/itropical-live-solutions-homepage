@@ -137,7 +137,6 @@ body {
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  min-height: 44px;
   transition: opacity .2s ease, border-color .2s ease;
 }
 .button.primary {
