@@ -1,4 +1,6 @@
 /* === Base styles === */
+html { scroll-behavior: smooth; }
+
 body {
   font-family: system-ui, Arial, sans-serif;
   margin: 0;
@@ -7,9 +9,37 @@ body {
   color: #eaeef7;
 }
 
+/* Font scale */
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.15rem; }
+
+/* Focus visible */
+:focus-visible {
+  outline: 2px solid #ffd166;
+  outline-offset: 2px;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  background: #ffd166;
+  color: #111;
+  padding: 8px 16px;
+  border-radius: 0 0 8px 8px;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: bold;
+}
+.skip-link:focus {
+  top: 0;
+}
+
 /* Layout container */
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -18,7 +48,7 @@ body {
 .header {
   background: #111;
   border-bottom: 1px solid #333;
-  position: sticky; /* keep visible on scroll */
+  position: sticky;
   top: 0;
   z-index: 10;
 }
@@ -27,7 +57,7 @@ body {
 .header .container {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;   /* bottom align logo + right block */
+  align-items: flex-end;
   gap: 24px;
   flex-wrap: nowrap;
 }
@@ -38,7 +68,7 @@ body {
   gap: 12px;
   text-decoration: none;
   color: #fff;
-  align-items: flex-end;   /* align text baseline with logo bottom */
+  align-items: flex-end;
 }
 
 /* Logo image */
@@ -49,11 +79,11 @@ body {
 
 /* === Right block: company name (top inside) + nav (below) === */
 .right-block {
-  margin-left: auto;           /* push block to the far right */
+  margin-left: auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;       /* right-align contents */
-  justify-content: flex-start; /* title at top inside the block */
+  align-items: flex-end;
+  justify-content: flex-start;
   gap: 12px;
 }
 
@@ -81,9 +111,9 @@ body {
 
 /* === Navigation active link === */
 .header .nav a.active {
-  color: #ffd166;               /* highlight color */
-  font-weight: bold;            /* optional emphasis */
-  text-decoration: underline;   /* underline highlight */
+  color: #ffd166;
+  font-weight: bold;
+  text-decoration: underline;
   text-underline-offset: 4px;
 }
 
@@ -101,7 +131,9 @@ body {
   border: 1px solid #273149;
   color: #eaeef7;
   border-radius: 8px;
-  padding: 6px 10px;
+  padding: 8px 14px;
+  min-height: 44px;
+  min-width: 44px;
   cursor: pointer;
 }
 .lang button.active {
@@ -137,7 +169,15 @@ body {
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  transition: opacity .2s ease, border-color .2s ease;
+  transition: opacity .2s ease, border-color .2s ease, transform .2s ease;
+}
+.button:hover {
+  opacity: .9;
+  transform: translateY(-1px);
+}
+.button:active {
+  transform: translateY(0);
+  opacity: .8;
 }
 .button.primary {
   background: #ffd166;
@@ -151,6 +191,40 @@ body {
   flex-wrap: wrap;
 }
 
+/* Store badges */
+.store-badges {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.store-badge {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform .2s ease, opacity .2s ease;
+  line-height: 0;
+}
+.store-badge img {
+  height: 40px;
+  width: auto;
+  display: block;
+  border-radius: 8px;
+}
+.store-badge img[alt*="Google Play"] {
+  height: 58px;
+  margin: -9px 0 -9px -8px;
+}
+.store-badges .button {
+  margin-right: 0;
+  line-height: 1;
+  align-self: center;
+}
+.store-badge:hover {
+  transform: translateY(-1px);
+  opacity: .9;
+}
+
 /* Cards grid (services, etc.) */
 .cards {
   display: grid;
@@ -162,7 +236,6 @@ body {
   border: 1px solid #273149;
   border-radius: 10px;
   background: #0e1729;
-  cursor: pointer;
 }
 
 /* Address block */
@@ -174,20 +247,20 @@ body {
 .footer {
   padding: 20px;
   font-size: .9rem;
-  color: #aaa;
+  color: #bbb;
   text-align: center;
   border-top: 1px solid #273149;
 }
 
 /* Center the Contact button inside footer */
 .footer-cta {
-  display: flex;              /* enable flexbox */
-  justify-content: center;    /* center horizontally */
-  margin-top: 10px;           /* spacing above */
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .footer-cta .button {
-  display: inline-block;      /* keep button size natural */
+  display: inline-block;
 }
 
 /* Global links */
@@ -241,6 +314,13 @@ a:hover {
   gap: 16px;
   overflow-x: auto;
   padding-bottom: 8px;
+  -webkit-mask-image: linear-gradient(to right, #000 85%, transparent 100%);
+  mask-image: linear-gradient(to right, #000 85%, transparent 100%);
+}
+.screenshot-row::after {
+  content: '';
+  flex-shrink: 0;
+  width: 1px;
 }
 .screenshot {
   height: 480px;
@@ -275,9 +355,21 @@ a:hover {
   margin: 0;
 }
 
+/* === Responsive (tablet) === */
+@media (max-width: 768px) {
+  .header .container {
+    flex-wrap: wrap;
+  }
+  .header img {
+    width: 200px;
+  }
+  .screenshot {
+    height: 420px;
+  }
+}
+
 /* === Responsive (mobile) === */
 @media (max-width: 640px) {
-  /* Add horizontal padding */
   .container {
     padding-left: 16px;
     padding-right: 16px;
@@ -292,10 +384,10 @@ a:hover {
   /* Nav: full width, stacked vertically, right-aligned */
   .header .nav {
     flex: 1 1 100%;
-    order: 1;                     
+    order: 1;
     display: flex;
-    flex-direction: column;       /* stack vertically */
-    align-items: flex-end;        /* right aligned */
+    flex-direction: column;
+    align-items: flex-end;
     gap: 26px;
     justify-content: flex-start;
   }
@@ -309,12 +401,10 @@ a:hover {
     margin-top: 6px;
   }
 
-  /* Smaller language buttons */
   .header .lang button {
     padding: 4px 8px;
   }
 
-  /* Logo smaller on mobile (50% of screen width) */
   .header img {
     width: 50vw;
     height: auto;
@@ -327,7 +417,6 @@ a:hover {
     text-align: center;
   }
 
-  /* Smaller screenshots on mobile */
   .screenshot {
     height: 360px;
   }
@@ -338,5 +427,18 @@ a:hover {
   a[href^="mailto:"] {
     display: inline-block;
     padding-bottom: 10px;
+  }
+
+  /* Store badges stack on mobile */
+  .store-badges {
+    justify-content: center;
+  }
+}
+
+/* === Reduced motion === */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
   }
 }

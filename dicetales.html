@@ -11,10 +11,14 @@
   <link rel="stylesheet" href="styles.css">
   <meta name="description" content="DiceTales - AI-powered fantasy stories from dice rolls. Roll dice, generate unique stories, listen with AI narration.">
   <link rel="canonical" href="https://itropical-live-solutions.com/dicetales.html">
+  <link rel="alternate" hreflang="en" href="https://itropical-live-solutions.com/dicetales.html">
+  <link rel="alternate" hreflang="de" href="https://itropical-live-solutions.com/dicetales.html?lang=de">
+  <link rel="alternate" hreflang="x-default" href="https://itropical-live-solutions.com/dicetales.html">
   <!-- Analytics -->
   <script defer src="https://analytics.itropical-live-solutions.com/script.js" data-website-id="c31b0aa7-4bc5-49f9-8f37-451eeb2d98c0"></script>
 </head>
 <body>
+  <a href="#top" class="skip-link">Skip to content</a>
   <div id="site-header"></div>
 
   <main id="top">
@@ -23,10 +27,11 @@
       <div class="app-hero-content">
         <img src="dicetales/icon.webp" alt="DiceTales App Icon" class="app-icon" width="120" height="120">
         <div>
-          <h2 data-i18n="dt.hero.title">DiceTales</h2>
+          <h1 data-i18n="dt.hero.title">DiceTales</h1>
           <p class="lead" data-i18n="dt.hero.lead">Roll dice. Generate unique AI-powered fantasy stories. Listen with professional voice narration.</p>
-          <div class="cta">
-            <a class="button primary" href="https://apps.apple.com/app/dicetales/id6478500774" target="_blank" rel="noopener" data-i18n="dt.hero.cta">Download on the App Store</a>
+          <div class="store-badges">
+            <a class="button primary" href="https://dicetales.itropical-live-solutions.com/" target="_blank" rel="noopener" data-i18n="dt.hero.website">Visit Website</a>
+            <a class="store-badge" href="https://apps.apple.com/app/dicetales/id6478500774" target="_blank" rel="noopener"><img src="badge-appstore.svg" alt="Download on the App Store"></a>
           </div>
         </div>
       </div>
@@ -92,12 +97,24 @@
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="section container" style="text-align:center">
-      <h2 data-i18n="dt.cta.title">Start Rolling</h2>
-      <p data-i18n="dt.cta.body">Available for iPhone and iPad. Download now and create your first story.</p>
-      <div class="cta" style="justify-content:center">
-        <a class="button primary" href="https://apps.apple.com/app/dicetales/id6478500774" target="_blank" rel="noopener" data-i18n="dt.hero.cta">Download on the App Store</a>
+    <!-- More Apps -->
+    <section class="section container">
+      <h2 data-i18n="portfolio.title">Our Apps</h2>
+      <div class="cards">
+        <a href="markr.html" class="card app-card">
+          <div class="app-card-header">
+            <img src="markr/icon.webp" alt="Markr App Icon" class="app-card-icon" width="64" height="64" loading="lazy">
+            <div><h3>Markr</h3><span class="badge" data-i18n="portfolio.mr.tag">iOS App</span></div>
+          </div>
+          <p data-i18n="portfolio.mr.desc">Save your favorite places with photos, notes and categories. Private, portable and always with you.</p>
+        </a>
+        <a href="evanthium.html" class="card app-card">
+          <div class="app-card-header">
+            <img src="evanthium/icon.webp" alt="Evanthium App Icon" class="app-card-icon" width="64" height="64" loading="lazy">
+            <div><h3>Evanthium</h3><span class="badge" data-i18n="portfolio.ev.tag">iOS App</span><span class="badge" data-i18n="portfolio.ev.tag2">Android App</span></div>
+          </div>
+          <p data-i18n="portfolio.ev.desc">Location-based fantasy battle game. Collect elemental tokens in AR, conquer temples and challenge other players.</p>
+        </a>
       </div>
     </section>
   </main>
@@ -109,6 +126,7 @@
     </div>
   </footer>
 
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"DiceTales","operatingSystem":"iOS","applicationCategory":"EntertainmentApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":"https://itropical-live-solutions.com/dicetales.html"}</script>
   <script src="i18n.js" defer></script>
   <script src="header.js" defer></script>
   <script src="lang.js" defer></script>

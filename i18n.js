@@ -7,7 +7,7 @@ window.I18N = {
 
     "hero.badge": "Bali · Indonesia",
     "hero.title": "Ship your iOS app faster — one team, one language, end to end.",
-    "hero.cta": "Start a Project",
+    "hero.cta": "Get a Free Quote",
     "hero.lead": "We build native <strong>iOS apps with SwiftUI</strong> and scalable <strong>Swift/Vapor backends</strong> — one stack, one team, fast feedback loops. From MVP to production, incl. Auth, Push (APNs), realtime & payments.",
     "intro.merged": "PT. ITROPICAL LIVE SOLUTIONS focuses on Swift development. We deliver end-to-end solutions — app architecture, API design, and cloud operations.",
 
@@ -16,11 +16,12 @@ window.I18N = {
 
     "services.title": "Services",
     "svc.ios.title": "iOS Apps (SwiftUI)",
-    "svc.ios.body": "Native iPhone & iPad apps: Camera, MapKit, Push (APNs), In-App-Purchase. Clean architecture, TestFlight distribution.",
+    "svc.ios.body": "Custom iPhone &amp; iPad apps built with Apple's latest technology. Fast, reliable, and ready for the App Store.",
     "svc.vapor.title": "Swift Server with Vapor",
-    "svc.vapor.body": "APIs, Auth (JWT/OAuth), PostgreSQL, file storage, WebSockets/realtime. Deploy with Docker.",
+    "svc.vapor.body": "Secure server backends with user authentication, databases, real-time features and file storage. Scalable from day one.",
     "svc.fullstack.title": "Full-Stack Swift",
-    "svc.fullstack.body": "Unified models end-to-end: fast iteration, observability (logs/metrics), CI/CD, security & scaling.",
+    "svc.fullstack.body": "One language across app and server means faster development, fewer bugs, and seamless integration from prototype to production.",
+    "services.hint": "Typical project timeline: 4–12 weeks. <a href='/contact.html'>Get a free estimate →</a>",
 
     "contact.title": "Contact",
     "contact.card.title": "Contact",
@@ -46,12 +47,13 @@ window.I18N = {
     "nav.portfolio": "Apps",
 
     "portfolio.title": "Our Apps",
-    "portfolio.lead": "iOS applications designed, developed and operated by our team.",
+    "portfolio.lead": "Apps designed, developed and operated by our team.",
     "portfolio.dt.tag": "iOS App",
     "portfolio.dt.desc": "AI-powered fantasy stories from dice rolls — with themed dice packs, voice narration and a personal story library.",
 
     "dt.hero.title": "DiceTales",
     "dt.hero.lead": "Roll dice. Generate unique AI-powered fantasy stories. Listen with professional voice narration.",
+    "dt.hero.website": "Visit Website",
     "dt.hero.cta": "Download on the App Store",
     "dt.features.title": "Features",
     "dt.feat.dice.title": "Interactive Dice Rolling",
@@ -84,6 +86,7 @@ window.I18N = {
     "portfolio.mr.tag": "iOS App",
     "portfolio.mr.desc": "Save your favorite places with photos, notes and categories. Private, portable and always with you.",
     "portfolio.ev.tag": "iOS App",
+    "portfolio.ev.tag2": "Android App",
     "portfolio.ev.desc": "Location-based fantasy battle game. Collect elemental tokens in AR, conquer temples and challenge other players.",
 
     "mr.hero.title": "Markr — Save Places",
@@ -130,7 +133,7 @@ window.I18N = {
     "ev.feat.leaderboard.title": "Leaderboard",
     "ev.feat.leaderboard.body": "Compete globally or filter by element. Track battles fought, coins collected and player levels.",
     "ev.cta.title": "Join the Battle",
-    "ev.cta.body": "Available for iPhone. Choose your element and start conquering.",
+    "ev.cta.body": "Available for iPhone and Android. Choose your element and start conquering.",
 
     "footer.copy": "© 2026 PT. ITROPICAL LIVE SOLUTIONS. All rights reserved."
   },
@@ -143,7 +146,7 @@ window.I18N = {
 
     "hero.badge": "Bali · Indonesien",
     "hero.title": "Ihre iOS-App schneller ausliefern — ein Team, eine Sprache, von Anfang bis Ende.",
-    "hero.cta": "Projekt starten",
+    "hero.cta": "Kostenloses Angebot",
     "hero.lead": "Wir bauen native <strong>iOS-Apps mit SwiftUI</strong> und skalierbare <strong>Swift/Vapor-Backends</strong> – ein Stack, ein Team, kurze Wege. Von MVP bis Produktion inkl. Auth, Push (APNs), Realtime & Payments.",
     "intro.merged": "PT. ITROPICAL LIVE SOLUTIONS ist auf Swift-Entwicklung spezialisiert. Wir liefern End-to-End-Lösungen – App-Architektur, API-Design und Cloud-Betrieb.",
 
@@ -152,11 +155,12 @@ window.I18N = {
 
     "services.title": "Leistungen",
     "svc.ios.title": "iOS-Apps (SwiftUI)",
-    "svc.ios.body": "Native iPhone- & iPad-Apps: Kamera, MapKit, Push (APNs), In-App-Käufe. Saubere Architektur, TestFlight-Bereitstellung.",
+    "svc.ios.body": "Maßgeschneiderte iPhone- &amp; iPad-Apps mit Apples neuester Technologie. Schnell, zuverlässig und bereit für den App Store.",
     "svc.vapor.title": "Swift-Server mit Vapor",
-    "svc.vapor.body": "APIs, Auth (JWT/OAuth), PostgreSQL, Dateispeicher, WebSockets/Realtime. Deployment via Docker.",
+    "svc.vapor.body": "Sichere Server-Backends mit Benutzer-Authentifizierung, Datenbanken, Echtzeit-Features und Dateispeicher. Skalierbar ab Tag eins.",
     "svc.fullstack.title": "Full-Stack Swift",
-    "svc.fullstack.body": "Gemeinsame Modelle End-to-End: schnelle Iteration, Observability (Logs/Metriken), CI/CD, Security & Skalierung.",
+    "svc.fullstack.body": "Eine Sprache für App und Server bedeutet schnellere Entwicklung, weniger Bugs und nahtlose Integration vom Prototyp bis zur Produktion.",
+    "services.hint": "Typische Projektlaufzeit: 4–12 Wochen. <a href='/contact.html'>Kostenloses Angebot anfragen →</a>",
 
     "contact.title": "Kontakt",
     "contact.card.title": "Kontakt",
@@ -182,12 +186,13 @@ window.I18N = {
     "nav.portfolio": "Apps",
 
     "portfolio.title": "Unsere Apps",
-    "portfolio.lead": "iOS-Anwendungen, die von unserem Team entworfen, entwickelt und betrieben werden.",
+    "portfolio.lead": "Apps, die von unserem Team entworfen, entwickelt und betrieben werden.",
     "portfolio.dt.tag": "iOS-App",
     "portfolio.dt.desc": "KI-generierte Fantasy-Geschichten aus Würfelwürfen — mit thematischen Würfelpaketen, Sprachausgabe und einer persönlichen Geschichtenbibliothek.",
 
     "dt.hero.title": "DiceTales",
     "dt.hero.lead": "Würfle. Erlebe einzigartige KI-generierte Fantasy-Geschichten. Lass sie dir von professionellen Stimmen vorlesen.",
+    "dt.hero.website": "Zur Website",
     "dt.hero.cta": "Im App Store laden",
     "dt.features.title": "Features",
     "dt.feat.dice.title": "Interaktives Würfeln",
@@ -220,6 +225,7 @@ window.I18N = {
     "portfolio.mr.tag": "iOS-App",
     "portfolio.mr.desc": "Speichere deine Lieblingsorte mit Fotos, Notizen und Kategorien. Privat, portabel und immer dabei.",
     "portfolio.ev.tag": "iOS-App",
+    "portfolio.ev.tag2": "Android-App",
     "portfolio.ev.desc": "Standortbasiertes Fantasy-Kampfspiel. Sammle Elementar-Tokens in AR, erobere Tempel und fordere andere Spieler heraus.",
 
     "mr.hero.title": "Markr — Orte speichern",
@@ -266,7 +272,7 @@ window.I18N = {
     "ev.feat.leaderboard.title": "Rangliste",
     "ev.feat.leaderboard.body": "Tritt global an oder filtere nach Element. Verfolge Kämpfe, gesammelte Münzen und Spielerlevel.",
     "ev.cta.title": "Tritt dem Kampf bei",
-    "ev.cta.body": "Verfügbar für iPhone. Wähle dein Element und beginne zu erobern.",
+    "ev.cta.body": "Verfügbar für iPhone und Android. Wähle dein Element und beginne zu erobern.",
 
     "footer.copy": "© 2026 PT. ITROPICAL LIVE SOLUTIONS. Alle Rechte vorbehalten."
   }
