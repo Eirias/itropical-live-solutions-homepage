@@ -431,7 +431,23 @@ a:hover {
 
   /* Store badges stack on mobile */
   .store-badges {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .store-badges .button {
+    width: 100%;
+    max-width: 220px;
+    text-align: center;
+  }
+
+  .store-badge img {
+    height: 44px !important;
+  }
+
+  .store-badge img[alt*="Google Play"] {
+    height: 64px !important;
+    margin: -10px 0 !important;
   }
 }
 
