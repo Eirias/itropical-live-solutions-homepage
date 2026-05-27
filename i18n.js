@@ -29,7 +29,7 @@ window.I18N = {
     "contact.text": "Get in touch with us quickly via email or phone:",
     "contact.emailBtn": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"display:inline-block;vertical-align:middle;margin-right:6px\"><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"/></svg>Email",
     "contact.callBtn": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"display:inline-block;vertical-align:middle;margin-right:6px\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z\"/></svg>Call",
-    "contact.address": "Alamanda Office, Jl. Bypass Ngurah Rai Br. Kerthayasa No.67, Floor,<br>Kedonganan, Kuta, Kab. Badung, Bali 80361<br>Indonesia",
+    "contact.address": "Alamanda Office, Jl. Bypass Ngurah Rai Br. Kerthayasa No.67, 5th Floor,<br>Kedonganan, Kuta, Kab. Badung, Bali 80361<br>Indonesia",
 
     "privacy.title": "Privacy Policy",
   	"privacy.intro": "We take your privacy seriously. This page explains what data we (do not) collect and how we handle information.",
@@ -168,7 +168,7 @@ window.I18N = {
     "contact.text": "Nimm schnell Kontakt mit uns auf – per E-Mail oder Telefon:",
     "contact.emailBtn": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"display:inline-block;vertical-align:middle;margin-right:6px\"><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"/></svg>E-Mail",
     "contact.callBtn": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"display:inline-block;vertical-align:middle;margin-right:6px\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z\"/></svg>Anrufen",
-    "contact.address": "Alamanda Office, Jl. Bypass Ngurah Rai Br. Kerthayasa No.67, Floor,<br>Kedonganan, Kuta, Kab. Badung, Bali 80361<br>Indonesien",
+    "contact.address": "Alamanda Office, Jl. Bypass Ngurah Rai Br. Kerthayasa No.67, 5th Floor,<br>Kedonganan, Kuta, Kab. Badung, Bali 80361<br>Indonesien",
 
     "privacy.title": "Datenschutzerklärung",
   	"privacy.intro": "Wir nehmen den Schutz deiner Daten ernst. Diese Seite erklärt, welche Daten wir (nicht) erheben und wie wir Informationen behandeln.",
