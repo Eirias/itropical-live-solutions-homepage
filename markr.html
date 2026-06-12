@@ -8,6 +8,9 @@
   <link rel="preload" href="logo.webp" as="image" type="image/webp">
   <link rel="preload" href="header.html" as="fetch" crossorigin>
   <link rel="icon" href="logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <meta name="description" content="Markr - Save your favorite places. Pin locations, add photos and notes, export and share your personal map.">
   <link rel="canonical" href="https://itropical-live-solutions.com/markr.html">
@@ -23,7 +26,8 @@
 
   <main id="top">
     <!-- Hero -->
-    <section class="hero container app-hero">
+    <section class="hero container app-hero" style="--app-glow: rgba(255, 99, 88, .18)">
+      <div class="app-hero-glow" aria-hidden="true"></div>
       <div class="app-hero-content">
         <img src="markr/icon.webp" alt="Markr App Icon" class="app-icon" width="120" height="120">
         <div>
@@ -39,29 +43,29 @@
 
     <!-- Features -->
     <section class="section container">
-      <h2 data-i18n="mr.features.title">Features</h2>
+      <h2 data-i18n="mr.features.title" data-reveal>Features</h2>
       <div class="cards">
-        <div class="card">
+        <div class="card" data-reveal>
           <h3 data-i18n="mr.feat.save.title">Quick Save</h3>
           <p data-i18n="mr.feat.save.body">Save your current location with one tap. Use the home screen widget or Control Center shortcut for even faster access.</p>
         </div>
-        <div class="card">
+        <div class="card" data-reveal>
           <h3 data-i18n="mr.feat.map.title">Interactive Map</h3>
           <p data-i18n="mr.feat.map.body">View all saved places on an interactive map. Drag pins to adjust coordinates. Tap to edit details anytime.</p>
         </div>
-        <div class="card">
+        <div class="card" data-reveal>
           <h3 data-i18n="mr.feat.details.title">Rich Location Data</h3>
           <p data-i18n="mr.feat.details.body">Add photos, notes, addresses and categories to every location. 24 built-in categories from restaurants to landmarks.</p>
         </div>
-        <div class="card">
+        <div class="card" data-reveal>
           <h3 data-i18n="mr.feat.export.title">Export & Import</h3>
           <p data-i18n="mr.feat.export.body">Export your locations as JSON or CSV — including photos. Share via AirDrop, email or import from a backup file.</p>
         </div>
-        <div class="card">
+        <div class="card" data-reveal>
           <h3 data-i18n="mr.feat.trips.title">Trip Planning</h3>
           <p data-i18n="mr.feat.trips.body">Plan trips by searching and organizing locations. Build custom routes and manage multiple trips.</p>
         </div>
-        <div class="card">
+        <div class="card" data-reveal>
           <h3 data-i18n="mr.feat.privacy.title">Privacy First</h3>
           <p data-i18n="mr.feat.privacy.body">All data stays on your device. No cloud sync, no tracking, no account required. Full data portability via export.</p>
         </div>
@@ -70,30 +74,30 @@
 
     <!-- Screenshots -->
     <section class="section container">
-      <h2 data-i18n="mr.screenshots.title">Screenshots</h2>
-      <div class="screenshot-row">
-        <img src="markr/screenshot1.webp" alt="Markr Map Light Mode" class="screenshot" loading="lazy">
-        <img src="markr/screenshot2.webp" alt="Markr Map Dark Mode" class="screenshot" loading="lazy">
+      <h2 data-i18n="mr.screenshots.title" data-reveal>Screenshots</h2>
+      <div class="screenshot-row" data-reveal>
+        <div class="phone"><img src="markr/screenshot1.webp" alt="Markr Map Light Mode" class="screenshot" loading="lazy" width="369" height="800"></div>
+        <div class="phone"><img src="markr/screenshot2.webp" alt="Markr Map Dark Mode" class="screenshot" loading="lazy" width="369" height="800"></div>
       </div>
     </section>
 
     <!-- More Apps -->
     <section class="section container">
-      <h2 data-i18n="portfolio.title">Our Apps</h2>
+      <h2 data-i18n="portfolio.title" data-reveal>Our Apps</h2>
       <div class="cards">
-        <a href="dicetales.html" class="card app-card">
+        <a href="dicetales.html" class="card app-card" data-reveal>
           <div class="app-card-header">
             <img src="dicetales/icon.webp" alt="DiceTales App Icon" class="app-card-icon" width="64" height="64" loading="lazy">
             <div><h3>DiceTales</h3><span class="badge" data-i18n="portfolio.dt.tag">iOS App</span></div>
           </div>
           <p data-i18n="portfolio.dt.desc">AI-powered fantasy stories from dice rolls — with themed dice packs, voice narration and a personal story library.</p>
         </a>
-        <a href="evanthium.html" class="card app-card">
+        <a href="evanthium.html" class="card app-card" data-reveal>
           <div class="app-card-header">
             <img src="evanthium/icon.webp" alt="Evanthium App Icon" class="app-card-icon" width="64" height="64" loading="lazy">
             <div><h3>Evanthium</h3><span class="badge" data-i18n="portfolio.ev.tag">iOS App</span><span class="badge" data-i18n="portfolio.ev.tag2">Android App</span></div>
           </div>
-          <p data-i18n="portfolio.ev.desc">Location-based fantasy battle game. Collect elemental tokens in AR, conquer temples and challenge other players.</p>
+          <p data-i18n="portfolio.ev.desc">Location-based fantasy battle game. Collect crypto tokens in AR, conquer temples and challenge other players.</p>
         </a>
       </div>
     </section>
@@ -111,5 +115,6 @@
   <script src="header.js" defer></script>
   <script src="lang.js" defer></script>
   <script src="sw-register.js" defer></script>
+  <script src="reveal.js" defer></script>
 </body>
 </html>

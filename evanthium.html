@@ -8,8 +8,11 @@
   <link rel="preload" href="logo.webp" as="image" type="image/webp">
   <link rel="preload" href="header.html" as="fetch" crossorigin>
   <link rel="icon" href="logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Evanthium - Location-based fantasy battle game. Collect elemental tokens, fight in AR, conquer temples and climb the leaderboard.">
+  <meta name="description" content="Evanthium - Location-based fantasy battle game. Collect crypto tokens, fight in AR, conquer temples and climb the leaderboard.">
   <link rel="canonical" href="https://itropical-live-solutions.com/evanthium.html">
   <link rel="alternate" hreflang="en" href="https://itropical-live-solutions.com/evanthium.html">
   <link rel="alternate" hreflang="de" href="https://itropical-live-solutions.com/evanthium.html?lang=de">
@@ -21,7 +24,8 @@
   <div id="site-header"></div>
 
   <main id="top">
-    <section class="hero container app-hero">
+    <section class="hero container app-hero" style="--app-glow: rgba(96, 170, 255, .20)">
+      <div class="app-hero-glow" aria-hidden="true"></div>
       <div class="app-hero-content">
         <img src="evanthium/icon.webp" alt="Evanthium App Icon" class="app-icon" width="120" height="120">
         <div>
@@ -37,46 +41,46 @@
     </section>
 
     <section class="section container">
-      <h2 data-i18n="ev.features.title">Features</h2>
+      <h2 data-i18n="ev.features.title" data-reveal>Features</h2>
       <div class="cards">
-        <div class="card"><h3 data-i18n="ev.feat.elements.title">Four Elements</h3><p data-i18n="ev.feat.elements.body">Choose your fraction — Fire, Air, Water or Earth. Collect elemental tokens and merge all four to create rare Evanthium.</p></div>
-        <div class="card"><h3 data-i18n="ev.feat.ar.title">AR Coin Collector</h3><p data-i18n="ev.feat.ar.body">Explore your surroundings in augmented reality. Find and collect virtual coins placed at real-world GPS locations.</p></div>
-        <div class="card"><h3 data-i18n="ev.feat.battles.title">PvP Battles</h3><p data-i18n="ev.feat.battles.body">Challenge other players on the leaderboard. Stake tokens to attack — win and steal Evanthium from your opponents.</p></div>
-        <div class="card"><h3 data-i18n="ev.feat.temples.title">Temples & Map</h3><p data-i18n="ev.feat.temples.body">Discover temples on the map, check in for protection and tribute tokens for rewards. Location-based gameplay meets strategy.</p></div>
-        <div class="card"><h3 data-i18n="ev.feat.quests.title">Quests & Rewards</h3><p data-i18n="ev.feat.quests.body">Complete daily quests including movement challenges tracked via HealthKit. Earn elemental tokens and level up.</p></div>
-        <div class="card"><h3 data-i18n="ev.feat.leaderboard.title">Leaderboard</h3><p data-i18n="ev.feat.leaderboard.body">Compete globally or filter by element. Track battles fought, coins collected and player levels.</p></div>
+        <div class="card" data-reveal><h3 data-i18n="ev.feat.elements.title">Four Elements</h3><p data-i18n="ev.feat.elements.body">Choose your fraction — Fire, Air, Water or Earth. Collect elemental tokens and merge all four to create rare Evanthium.</p></div>
+        <div class="card" data-reveal><h3 data-i18n="ev.feat.ar.title">AR Coin Collector</h3><p data-i18n="ev.feat.ar.body">Explore your surroundings in augmented reality. Find and collect virtual coins placed at real-world GPS locations.</p></div>
+        <div class="card" data-reveal><h3 data-i18n="ev.feat.battles.title">PvP Battles</h3><p data-i18n="ev.feat.battles.body">Challenge other players on the leaderboard. Stake tokens to attack — win and steal Evanthium from your opponents.</p></div>
+        <div class="card" data-reveal><h3 data-i18n="ev.feat.temples.title">Temples & Map</h3><p data-i18n="ev.feat.temples.body">Discover temples on the map, check in for protection and tribute tokens for rewards. Location-based gameplay meets strategy.</p></div>
+        <div class="card" data-reveal><h3 data-i18n="ev.feat.quests.title">Quests & Rewards</h3><p data-i18n="ev.feat.quests.body">Complete daily quests including movement challenges tracked via HealthKit. Earn elemental tokens and level up.</p></div>
+        <div class="card" data-reveal><h3 data-i18n="ev.feat.leaderboard.title">Leaderboard</h3><p data-i18n="ev.feat.leaderboard.body">Compete globally or filter by element. Track battles fought, coins collected and player levels.</p></div>
       </div>
     </section>
 
     <section class="section container">
-      <h2 data-i18n="ev.screenshots.title">Screenshots</h2>
-      <h3>iOS</h3>
-      <div class="screenshot-row">
-        <img src="evanthium/map-en.webp" alt="Evanthium Map" class="screenshot" loading="lazy" data-i18n-src="ev.img.map">
-        <img src="evanthium/inappwallet_light-en.webp" alt="Evanthium Wallet" class="screenshot" loading="lazy" data-i18n-src="ev.img.wallet">
-        <img src="evanthium/leaderboard_dark-en.webp" alt="Evanthium Leaderboard" class="screenshot" loading="lazy" data-i18n-src="ev.img.leaderboard">
-        <img src="evanthium/quests_dark-en.webp" alt="Evanthium Quests" class="screenshot" loading="lazy" data-i18n-src="ev.img.quests">
+      <h2 data-i18n="ev.screenshots.title" data-reveal>Screenshots</h2>
+      <h3 class="gallery-label"><span class="badge">iOS</span></h3>
+      <div class="screenshot-row" data-reveal>
+        <div class="phone"><img src="evanthium/map-en.webp" alt="Evanthium Map" class="screenshot" loading="lazy" data-i18n-src="ev.img.map" width="369" height="800"></div>
+        <div class="phone"><img src="evanthium/inappwallet_light-en.webp" alt="Evanthium Wallet" class="screenshot" loading="lazy" data-i18n-src="ev.img.wallet" width="369" height="800"></div>
+        <div class="phone"><img src="evanthium/leaderboard_dark-en.webp" alt="Evanthium Leaderboard" class="screenshot" loading="lazy" data-i18n-src="ev.img.leaderboard" width="369" height="800"></div>
+        <div class="phone"><img src="evanthium/quests_dark-en.webp" alt="Evanthium Quests" class="screenshot" loading="lazy" data-i18n-src="ev.img.quests" width="369" height="800"></div>
       </div>
-      <h3>Android</h3>
-      <div class="screenshot-row">
-        <img src="evanthium/android_1_map.webp" alt="Evanthium Android Map" class="screenshot" loading="lazy">
-        <img src="evanthium/android_2_leaderboard.webp" alt="Evanthium Android Leaderboard" class="screenshot" loading="lazy">
-        <img src="evanthium/android_3_quests.webp" alt="Evanthium Android Quests" class="screenshot" loading="lazy">
-        <img src="evanthium/android_4_trade.webp" alt="Evanthium Android Trade" class="screenshot" loading="lazy">
+      <h3 class="gallery-label"><span class="badge">Android</span></h3>
+      <div class="screenshot-row" data-reveal>
+        <div class="phone"><img src="evanthium/android_1_map.webp" alt="Evanthium Android Map" class="screenshot" loading="lazy" width="369" height="800"></div>
+        <div class="phone"><img src="evanthium/android_2_leaderboard.webp" alt="Evanthium Android Leaderboard" class="screenshot" loading="lazy" width="369" height="800"></div>
+        <div class="phone"><img src="evanthium/android_3_quests.webp" alt="Evanthium Android Quests" class="screenshot" loading="lazy" width="369" height="800"></div>
+        <div class="phone"><img src="evanthium/android_4_trade.webp" alt="Evanthium Android Trade" class="screenshot" loading="lazy" width="369" height="800"></div>
       </div>
     </section>
 
     <section class="section container">
-      <h2 data-i18n="portfolio.title">Our Apps</h2>
+      <h2 data-i18n="portfolio.title" data-reveal>Our Apps</h2>
       <div class="cards">
-        <a href="dicetales.html" class="card app-card">
+        <a href="dicetales.html" class="card app-card" data-reveal>
           <div class="app-card-header">
             <img src="dicetales/icon.webp" alt="DiceTales App Icon" class="app-card-icon" width="64" height="64" loading="lazy">
             <div><h3>DiceTales</h3><span class="badge" data-i18n="portfolio.dt.tag">iOS App</span></div>
           </div>
           <p data-i18n="portfolio.dt.desc">AI-powered fantasy stories from dice rolls — with themed dice packs, voice narration and a personal story library.</p>
         </a>
-        <a href="markr.html" class="card app-card">
+        <a href="markr.html" class="card app-card" data-reveal>
           <div class="app-card-header">
             <img src="markr/icon.webp" alt="Markr App Icon" class="app-card-icon" width="64" height="64" loading="lazy">
             <div><h3>Markr</h3><span class="badge" data-i18n="portfolio.mr.tag">iOS App</span></div>
@@ -97,5 +101,6 @@
   <script src="header.js" defer></script>
   <script src="lang.js" defer></script>
   <script src="sw-register.js" defer></script>
+  <script src="reveal.js" defer></script>
 </body>
 </html>
