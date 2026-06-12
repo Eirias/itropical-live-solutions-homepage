@@ -10,6 +10,9 @@
   <link rel="preload" href="header.html" as="fetch" crossorigin>
   <!-- Favicon and styles -->
   <link rel="icon" href="logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <!-- Meta for performance -->
   <meta name="description" content="PT. ITROPICAL LIVE SOLUTIONS - Swift Full-Stack Development: iOS Apps with SwiftUI and Vapor Backends">
@@ -32,66 +35,94 @@
   <div id="site-header"></div>
   <main id="top">
     <section class="hero container">
-      <h1 data-i18n="hero.title">Ship your iOS app faster — one team, one language, end to end.</h1>
-      <p class="lead" data-i18n="hero.lead">We build native <strong>iOS apps with SwiftUI</strong> and scalable <strong>Swift/Vapor backends</strong> — one stack, one team, fast feedback loops. From MVP to production, incl. Auth, Push (APNs), realtime & payments.</p>
-      <p data-i18n="intro.merged">PT. ITROPICAL LIVE SOLUTIONS focuses on Swift development. We deliver end‑to‑end solutions — app architecture, API design, and cloud operations.</p>
+      <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="hero.eyebrow">Swift · iOS · Vapor</span></p>
+      <h1 data-i18n="hero.title">Ship your iOS app faster — <span class="grad-text">one team, one language</span>, end to end.</h1>
+      <p class="lead" data-i18n="hero.lead">We build native <strong>iOS apps with SwiftUI</strong> and the <strong>Swift/Vapor backends</strong> behind them. One language across the stack keeps feedback loops short. From MVP to production, including auth, push (APNs), realtime and payments.</p>
+      <p class="hero-sub" data-i18n="intro.merged">PT. ITROPICAL LIVE SOLUTIONS is a Swift shop: app architecture, API design and cloud operations from one team.</p>
       <div class="cta">
         <a class="button primary" href="/contact.html" data-i18n="hero.cta">Start a Project</a>
-        <a class="button" href="/portfolio.html" data-i18n="hero.portfolio">See our work</a>
+        <a class="button ghost" href="/portfolio.html" data-i18n="hero.portfolio">See our work</a>
       </div>
+      <ul class="hero-proof" aria-label="Highlights">
+        <li data-i18n="hero.proof1">Own apps live on the App Store & Google Play</li>
+        <li data-i18n="hero.proof2">One language for app & backend</li>
+        <li data-i18n="hero.proof3">MVP in 4–12 weeks</li>
+      </ul>
     </section>
 
     <section id="services" class="section container">
-      <h2 data-i18n="services.title">Services</h2>
+      <h2 data-i18n="services.title" data-reveal>Services</h2>
       <div class="cards">
-        <div class="card">
+        <div class="card" data-reveal>
+          <div class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M12 18h.01"/></svg>
+          </div>
           <h3 data-i18n="svc.ios.title">iOS Apps (SwiftUI)</h3>
-          <p data-i18n="svc.ios.body">Native iPhone & iPad apps: Camera, MapKit, Push (APNs), In‑App‑Purchase. Clean architecture, TestFlight distribution.</p>
+          <p data-i18n="svc.ios.body">iPhone & iPad apps in SwiftUI, including camera, maps, push and in-app purchases. Built to pass App Store review on the first attempt.</p>
         </div>
-        <div class="card">
+        <div class="card" data-reveal>
+          <div class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg>
+          </div>
           <h3 data-i18n="svc.vapor.title">Swift Server with Vapor</h3>
-          <p data-i18n="svc.vapor.body">APIs, Auth (JWT/OAuth), PostgreSQL, file storage, WebSockets/realtime. Deploy to AWS (EC2/ECS) or Docker.</p>
+          <p data-i18n="svc.vapor.body">Server backends in Swift: authentication, PostgreSQL, WebSockets and file storage. Deployed to AWS or any Docker host.</p>
         </div>
-        <div class="card">
+        <div class="card" data-reveal>
+          <div class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 4.9-9 4.9-9-4.9L12 2z"/><path d="m3 11.9 9 4.9 9-4.9"/><path d="m3 16.9 9 4.9 9-4.9"/></svg>
+          </div>
           <h3 data-i18n="svc.fullstack.title">Full‑Stack Swift</h3>
-          <p data-i18n="svc.fullstack.body">Unified models end‑to‑end: fast iteration, observability (logs/metrics), CI/CD, security & scaling.</p>
+          <p data-i18n="svc.fullstack.body">App and server share one language and the same models. When the API changes, the compiler catches it in the app the same minute.</p>
         </div>
       </div>
-      <p class="lead" style="margin-top:24px;text-align:center" data-i18n="services.hint">Typical project timeline: 4–12 weeks. <a href="/contact.html">Get a free estimate →</a></p>
+      <p class="lead section-hint" data-i18n="services.hint" data-reveal>Typical project timeline: 4–12 weeks. <a href="/contact.html">Get a free estimate →</a></p>
     </section>
 
     <section id="portfolio" class="section container">
-      <h2 data-i18n="portfolio.title">Our Apps</h2>
+      <h2 data-i18n="portfolio.title" data-reveal>Our Apps</h2>
       <div class="cards">
-        <a href="dicetales.html" class="card app-card">
+        <a href="https://dicetales.itropical-live-solutions.com/" target="_blank" rel="noopener" class="card app-card has-shot" data-reveal>
           <div class="app-card-header">
-            <img src="dicetales/icon.webp" alt="DiceTales iOS App Icon" class="app-card-icon" width="64" height="64" loading="lazy">
+            <img src="dicetales/icon.webp" alt="" class="app-card-icon" width="64" height="64" loading="lazy">
             <div>
               <h3>DiceTales</h3>
               <span class="badge" data-i18n="portfolio.dt.tag">iOS App</span>
             </div>
           </div>
-          <p data-i18n="portfolio.dt.desc">AI-powered fantasy stories from dice rolls — with themed dice packs, voice narration and a personal story library.</p>
+          <p data-i18n="portfolio.dt.desc">Roll dice and the AI writes a unique fantasy story, read aloud by a narrator voice. With themed dice packs and a personal story library.</p>
+          <div class="app-card-shot">
+            <img src="dicetales/main-en.webp" alt="" width="369" height="800" loading="lazy">
+          </div>
+          <span class="app-card-more" aria-hidden="true">→</span>
         </a>
-        <a href="markr.html" class="card app-card">
+        <a href="https://markr-save-places.com/" target="_blank" rel="noopener" class="card app-card has-shot" data-reveal>
           <div class="app-card-header">
-            <img src="markr/icon.webp" alt="Markr iOS App Icon" class="app-card-icon" width="64" height="64" loading="lazy">
+            <img src="markr/icon.webp" alt="" class="app-card-icon" width="64" height="64" loading="lazy">
             <div>
               <h3>Markr</h3>
               <span class="badge" data-i18n="portfolio.mr.tag">iOS App</span>
             </div>
           </div>
-          <p data-i18n="portfolio.mr.desc">Save your favorite places with photos, notes and categories. Private, portable and always with you.</p>
+          <p data-i18n="portfolio.mr.desc">Save places with photos, notes and categories. Everything stays on your device and exports to JSON or CSV.</p>
+          <div class="app-card-shot">
+            <img src="markr/screenshot1.webp" alt="" width="369" height="800" loading="lazy">
+          </div>
+          <span class="app-card-more" aria-hidden="true">→</span>
         </a>
-        <a href="evanthium.html" class="card app-card">
+        <a href="https://evanthium.com/" target="_blank" rel="noopener" class="card app-card has-shot" data-reveal>
           <div class="app-card-header">
-            <img src="evanthium/icon.webp" alt="Evanthium iOS App Icon" class="app-card-icon" width="64" height="64" loading="lazy">
+            <img src="evanthium/icon.webp" alt="" class="app-card-icon" width="64" height="64" loading="lazy">
             <div>
               <h3>Evanthium</h3>
               <span class="badge" data-i18n="portfolio.ev.tag">iOS App</span>
+              <span class="badge" data-i18n="portfolio.ev.tag2">Android App</span>
             </div>
           </div>
-          <p data-i18n="portfolio.ev.desc">Location-based fantasy battle game. Collect elemental tokens in AR, conquer temples and challenge other players.</p>
+          <p data-i18n="portfolio.ev.desc">Location-based fantasy battle game. Collect crypto tokens in AR, conquer temples and challenge other players.</p>
+          <div class="app-card-shot">
+            <img src="evanthium/map-en.webp" alt="" width="369" height="800" loading="lazy">
+          </div>
+          <span class="app-card-more" aria-hidden="true">→</span>
         </a>
       </div>
     </section>
@@ -99,7 +130,7 @@
   <footer class="footer container">
   <div data-i18n="footer.copy">© 2026 PT. ITROPICAL LIVE SOLUTIONS. All rights reserved.</div>
   <div class="cta footer-cta">
-    <a class="button primary" href="/contact.html" data-i18n="imprint.contactBtn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:6px"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>Contact Page</a>
+    <a class="button primary" href="mailto:contact@itropical-live-solutions.com?subject=Project%20inquiry" data-i18n="footer.contact" data-umami-event="footer-contact-email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:6px"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>Contact</a>
   </div>
 </footer>
 
@@ -129,5 +160,6 @@
   <script src="header.js" defer></script>
   <script src="lang.js" defer></script>
   <script src="sw-register.js" defer></script>
+  <script src="reveal.js" defer></script>
 </body>
 </html>
