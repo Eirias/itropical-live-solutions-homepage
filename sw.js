@@ -1,5 +1,5 @@
 // sw.js — cache-first strategy for shared assets
-const CACHE = 'site-cache-v5';
+const CACHE = 'site-cache-v6';
 const PRECACHE = [
   'header.html',
   'styles.css',
@@ -7,18 +7,15 @@ const PRECACHE = [
   'lang.js',
   'header.js',
   'sw-register.js',
+  'reveal.js',
   'logo.webp',
   'logo.png',
   'index.html',
   'contact.html',
-  'privacy.html',
-  'imprint.html',
+  'legal.html',
   'portfolio.html',
-  'dicetales.html',
   'dicetales/icon.webp',
-  'markr.html',
   'markr/icon.webp',
-  'evanthium.html',
   'evanthium/icon.webp'
 ];
 
